@@ -1,5 +1,5 @@
 {
-    "name": "KINGMusicBot",
+    "name": "MusicBot",
     "description": "An Open-source PyTgCalls based Pyrogram bot to play music in voice chats",
     "keywords": [
       "telegram",
@@ -7,7 +7,7 @@
       "pytgcalls",
       "productivity"
     ],
-    "repository": "https://github.com/kartikrajofficial/KINGBOT-MUSIC-BOT",
+    "repository": "https://github.com/kartikrajofficial/KINGBOTMUSICBOT",
     "stack": "container",
     "env": {
       "API_ID": {
