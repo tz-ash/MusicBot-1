@@ -34,7 +34,7 @@ async def start_(client: Client, message: Message):
                         "💬 Group 💬", url="https://t.me/KINGBOTOFFICIALCHAT"
                     ),
                     InlineKeyboardButton(
-                        "📣 Channel 📣", url="https://t.me/KINGBOTOFFICIALSUPPORT"
+                        "📣 Creater 📣", url="https://t.me/Kartikrajofficial"
                     )
                 ],
                 [
