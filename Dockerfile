@@ -8,7 +8,7 @@ RUN apt-get update -y && \
         python3-pip \
         git \
         ffmpeg && \
-    git clone https://github.com/kartikrajofficial/KINGBOTMUSICBOT.git && \
+    git clone https://github.com/kartikrajofficial/MusicBot.git && \
     cd MusicBot && \
     git clone https://github.com/pytgcalls/pytgcalls.git && \
     cd pytgcalls && \
