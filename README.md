@@ -29,9 +29,9 @@ Get STRING_NAME from here only otherwise not work:
 
 ## Credits
 
-- [KARTIKRAJOFFICIAL](www.telegram.dog/Kartikrajofficial)
-- [Roj](https://github.com/rojserbest): main developer
+- [KARTIKRAJOFFICIAL](www.t.me/Kartikrajofficial): Main Developer
+- [Roj](https://github.com/rojserbest): developer
 - [Marvin](https://github.com/BlackStoneReborn): bug reporter
 - [Laky](https://github.com/Laky-64) & [Andrew](https://github.com/AndrewLaneX): PyTgCalls
 - [Original Repo](https://github.com/suprojects/CallsMusic)
-- KRAKEN
+- KRAKEN / HELL
