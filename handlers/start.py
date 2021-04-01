@@ -15,18 +15,24 @@ from helpers.wrappers import errors, admins_only
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-       f"""🤗🤗Hi {message.from_user.first_name}!
+       f"""Dear {message.from_user.first_name}!
 
 😁 I am KINGBOT Music Player. 
 
 🥳 I can play music in your Telegram Group's Voice Chat😉
 
-⚜️ Use these buttons below to know more. 👇""",
+My commands - /play, /stop, /skip, /pause, /resume, which work in grp
+
+Thanks for using .
+
+Regrards [KINGBOT](https://t.me/KINGBOTOFFICIAL)
+
+😎 Use these buttons below to know more. 👇""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Source Code 😅 ", url="https://t.me/KINGBOTOFFICIAL"
+                        "Source Code 😅 ", url="https://t.me/KINGBOTOFFICIAL/23"
                     )
                 ],
                 [
@@ -34,7 +40,7 @@ async def start_(client: Client, message: Message):
                         "💬 Group 💬", url="https://t.me/KINGBOTOFFICIALCHAT"
                     ),
                     InlineKeyboardButton(
-                        "📣 Creater 📣", url="https://t.me/Kartikrajofficial"
+                        "📣 Channel 📣", url="https://t.me/KINGBOTOFFICIAL"
                     )
                 ],
                 [
