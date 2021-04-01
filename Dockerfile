@@ -1,3 +1,4 @@
+FROM debian:latest
 
 FROM nikolaik/python-nodejs:python3.9-nodejs15-slim
 
