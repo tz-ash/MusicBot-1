@@ -20,3 +20,7 @@ with Client("MusicPlayer" ,api_id=API_ID ,api_hash=API_HASH) as pyrogram:
     print("Your SESSION_NAME have been sent to your Telegram Saved Messages")
 
 os.remove("MusicPlayer.session")
+
+
+
+Chutiya 😂
