@@ -29,7 +29,7 @@ Get STRING_NAME from here only otherwise not work:
 
 ## Credits
 
-- [KARTIKRAJOFFICIAL](www.t.me/Kartikrajofficial): Main Developer
+- [KARTIKRAJOFFICIAL](https://github.com/kartikrajofficial0773h): Main Developer
 - [Roj](https://github.com/rojserbest): developer
 - [Marvin](https://github.com/BlackStoneReborn): bug reporter
 - [Laky](https://github.com/Laky-64) & [Andrew](https://github.com/AndrewLaneX): PyTgCalls
