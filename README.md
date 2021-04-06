@@ -10,7 +10,7 @@
 <h2 align="centre">⚙️ Set Up ⚙️</h3>
 
 <h3 align="centre"> Heroku </h4>
-
+Fork and Deploy if u have github account. Do not forget to give star 🌟
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
