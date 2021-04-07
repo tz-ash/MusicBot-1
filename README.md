@@ -1,11 +1,5 @@
 <h1 align="centre">©️ KINGBOT Music Bot 🎶</h1>
 
-## Requirements 📝
-
-- FFmpeg
-- NodeJS [nodesource.com](https://nodesource.com/)
-- Python 3.7+
-- [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
 
 <h2 align="centre">⚙️ Set Up ⚙️</h3>
 
