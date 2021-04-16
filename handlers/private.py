@@ -28,7 +28,7 @@ Regrards [KINGBOT](https://t.me/KINGBOTOFFICIAL)
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url="https://github.com/kartikrajofficial/MusicBot")
+                        "🛠 DEPLOY LINK🛠", url="https://github.com/kartikrajofficial")
                   ],[
                     InlineKeyboardButton(
                         "💬 Group", url="https://t.me/KINGBOTOFFICIALCHAT"
@@ -38,7 +38,7 @@ Regrards [KINGBOT](https://t.me/KINGBOTOFFICIAL)
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/JEGroupMusicPlayerBot?startgroup=true"
+                        "➕ Add To Your Group ➕", url="https://t.me/KINGBOTMUSICBOT?startgroup=true"
                     )]
             ]
         ),
@@ -47,7 +47,7 @@ Regrards [KINGBOT](https://t.me/KINGBOTOFFICIAL)
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**KINGBOT MUSIC PLAYER IS ALWAYS ACTIVE!!**""",
+      await message.reply_text("""**⭐KINGBOT MUSIC PLAYER IS ALWAYS ACTIVE!!⭐**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
