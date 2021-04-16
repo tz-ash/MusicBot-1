@@ -1,80 +1,75 @@
-from pyrogram import Client, filters
+from asyncio.queues import QueueEmpty
+
+from pyrogram import Client
 from pyrogram.types import Message
+from callsmusic import callsmusic
 
-import tgcalls
-import sira
-from cache.admins import set
-from helpers.wrappers import errors, admins_only
+from config import BOT_NAME as BN
+from helpers.filters import command, other_filters
+from helpers.decorators import errors, authorized_users_only
 
 
-@Client.on_message(
-    filters.command("pause")
-    & filters.group
-    & ~ filters.edited
-)
+@Client.on_message(command("pause") & other_filters)
 @errors
-@admins_only
-async def pause(client: Client, message: Message):
-    tgcalls.pytgcalls.pause_stream(message.chat.id)
-    await message.reply_text("**KINGBOT:** ⏸ Paused.")
-
-
-@Client.on_message(
-    filters.command("resume")
-    & filters.group
-    & ~ filters.edited
-)
-@errors
-@admins_only
-async def resume(client: Client, message: Message):
-    tgcalls.pytgcalls.resume_stream(message.chat.id)
-    await message.reply_text("**KINGBOT:** ▶️ Resumed.")
-
-
-@Client.on_message(
-    filters.command(["stop", "end"])
-    & filters.group
-    & ~ filters.edited
-)
-@errors
-@admins_only
-async def stop(client: Client, message: Message):
-    try:
-        sira.clear(message.chat.id)
-    except:
-        pass
-
-    tgcalls.pytgcalls.leave_group_call(message.chat.id)
-    await message.reply_text("**KINGBOT:** ⏹ Stopped.")
-
-
-@Client.on_message(
-    filters.command(["skip", "next"])
-    & filters.group
-    & ~ filters.edited
-)
-@errors
-@admins_only
-async def skip(client: Client, message: Message):
-    chat_id = message.chat.id
-
-    sira.task_done(chat_id)
-
-    if sira.is_empty(chat_id):
-        tgcalls.pytgcalls.leave_group_call(chat_id)
+@authorized_users_only
+async def pause(_, message: Message):
+    if (
+            message.chat.id not in callsmusic.pytgcalls.active_calls
+    ) or (
+            callsmusic.pytgcalls.active_calls[message.chat.id] == 'paused'
+    ):
+        await message.reply_text("**⭐KINGBOT⭐**: Nothing is playing!")
     else:
-        tgcalls.pytgcalls.change_stream(
-            chat_id, sira.get(chat_id)["file_path"]
-        )
-
-    await message.reply_text("**KINGBOT:** ⏩ Skipped the current song.")
+        callsmusic.pytgcalls.pause_stream(message.chat.id)
+        await message.reply_text("**⭐KINGBOT⭐**: ▶️ Paused!!")
 
 
-@Client.on_message(
-    filters.command("admincache")
-)
+@Client.on_message(command("resume") & other_filters)
 @errors
-@admins_only
-async def admincache(client, message: Message):
-    set(message.chat.id, [member.user for member in await message.chat.get_members(filter="administrators")])
-    await message.reply_text("**KINGBOT:** ❇️ Admin cache refreshed!")
+@authorized_users_only
+async def resume(_, message: Message):
+    if (
+            message.chat.id not in callsmusic.pytgcalls.active_calls
+    ) or (
+            callsmusic.pytgcalls.active_calls[message.chat.id] == 'playing'
+    ):
+        await message.reply_text("**⭐KINGBOT⭐**: 😏 Nothing is paused!")
+    else:
+        callsmusic.pytgcalls.resume_stream(message.chat.id)
+        await message.reply_text("**⭐KINGBOT⭐**: ⏸ Resumed!")
+
+
+@Client.on_message(command("end") & other_filters)
+@errors
+@authorized_users_only
+async def stop(_, message: Message):
+    if message.chat.id not in callsmusic.pytgcalls.active_calls:
+        await message.reply_text("**⭐KINGBOT⭐**: 🙄 Nothing is streaming!")
+    else:
+        try:
+            callsmusic.queues.clear(message.chat.id)
+        except QueueEmpty:
+            pass
+
+        callsmusic.pytgcalls.leave_group_call(message.chat.id)
+        await message.reply_text("**⭐KINGBOT⭐**: ❌ Stopped streaming!")
+
+
+@Client.on_message(command("skip") & other_filters)
+@errors
+@authorized_users_only
+async def skip(_, message: Message):
+    if message.chat.id not in callsmusic.pytgcalls.active_calls:
+        await message.reply_text("**⭐KINGBOT⭐**: ❗ Nothing is playing to skip!")
+    else:
+        callsmusic.queues.task_done(message.chat.id)
+
+        if callsmusic.queues.is_empty(message.chat.id):
+            callsmusic.pytgcalls.leave_group_call(message.chat.id)
+        else:
+            callsmusic.pytgcalls.change_stream(
+                message.chat.id,
+                callsmusic.queues.get(message.chat.id)["file"]
+            )
+
+        await message.reply_text("**⭐KINGBOT⭐**: ♂️ Skipped the current song!")
