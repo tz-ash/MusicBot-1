@@ -22,10 +22,4 @@ Get STRING_NAME from here only otherwise not work:
    - `SUDO_USERS` :  Fill Userid of yhe users whom you want to be able to control the bot. You can add multiple id by giving a space in b/w each id.
 
 ## Credits
-
-- [KARTIKRAJOFFICIAL](https://github.com/kartikrajofficial0773h): Main Developer
-- [Roj](https://github.com/rojserbest): developer
-- [Marvin](https://github.com/BlackStoneReborn): bug reporter
-- [Laky](https://github.com/Laky-64) & [Andrew](https://github.com/AndrewLaneX): PyTgCalls
-- [Original Repo](https://github.com/suprojects/CallsMusic)
-- KRAKEN / HELL
+ All their respective owners!! Some codes use from another bot also and i developed this !!
