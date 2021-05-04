@@ -12,6 +12,14 @@ Get STRING_NAME from here only otherwise not work:
 
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@Kartikpro/KINGBOT-MUSIC-STRING#main.py)
 
+
+
+### CONTACT SUPPORT
+
+https://t.me/KINGBOTOFFICIAL
+
+https://t.me/KINGBOTOFFICIALCHAT
+
 ### Mandatory Vars.
 
 - Some Of The Mandatory Vars Are :-
