@@ -29,5 +29,10 @@ https://t.me/KINGBOTOFFICIALCHAT
    - `BOT_TOKEN` :  Make a Bot from [@Botfather](https://t.me/botfather) and fill it's bot token.
    - `SUDO_USERS` :  Fill Userid of yhe users whom you want to be able to control the bot. You can add multiple id by giving a space in b/w each id.
 
+### Repository License 
+
+[Licence of KINGBOT MUSIC BOT](https://github.com/kartikrajofficial/MusicBot/blob/master/LICENSE)
+
+
 ## Credits
  All their respective owners!! Some codes use from another bot also and i developed this !!
