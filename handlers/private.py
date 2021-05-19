@@ -17,7 +17,7 @@ async def start(_, message: Message):
 
 Developed by ⚡ @Kartikrajofficial ⚡
 
-My commands - /play, /stop, /skip, /pause, /resume, which work in grp
+My commands - type  /help to get commands, which work in grp
 
 Thanks for using .
 
@@ -38,7 +38,7 @@ Regrards [KINGBOT](https://t.me/KINGBOTOFFICIAL)
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/KINGBOTMUSICBOT?startgroup=true"
+                        "➕ Add To Your Group ➕", url="https://t.me/Kingbot_Music_Bot?startgroup=true"
                     )]
             ]
         ),
