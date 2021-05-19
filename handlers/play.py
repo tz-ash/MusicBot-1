@@ -553,7 +553,7 @@ async def deezer(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "AuraXMusic"
+        user.first_name =  "kingbot_Music_Bot_Assistant"
     usar = user
     wew = usar.id
     try:
