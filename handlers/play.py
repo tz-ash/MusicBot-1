@@ -444,7 +444,7 @@ async def play(_, message: Message):
         #lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i> {user.first_name} Userbot not in this chat, Ask admin to send /play command for first time or add {user.first_name} manually</i>"
+            f"<i> {user.first_name} Userbot not in this chat, Add @kingbot_Music_Bot_Assistant in chat and set as admin! manually</i>"
         )
         return     
     sender_id = message.from_user.id
@@ -591,7 +591,7 @@ async def deezer(client: Client, message_: Message):
         #lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i> {user.first_name} Userbot not in this chat, Ask admin to send /play command for first time or add {user.first_name} manually</i>"
+            f"<i> {user.first_name} Userbot not in this chat, add @kingbot_Music_Bot_Assistant in chat and set as admin!! manually</i>"
         )
         return                            
     requested_by = message_.from_user.first_name   
