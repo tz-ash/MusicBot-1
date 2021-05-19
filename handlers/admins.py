@@ -13,7 +13,7 @@ from config import BOT_NAME as BN
 from config import SUDO_USERS
 from helpers.filters import command, other_filters
 from helpers.decorators import errors, authorized_users_only
-from config import que, admins as a
+from config import queues, admins as a
 
 @Client.on_message(filters.command('adminreset'))
 async def update_admin(client, message):
