@@ -35,4 +35,4 @@ https://t.me/KINGBOTOFFICIALCHAT
 
 
 ## Credits
- All their respective owners!! Some codes use from another bot also and i developed this !!
+ This Music Bot Developed by me only!!
