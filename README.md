@@ -8,6 +8,10 @@ Fork and Deploy if u have github account. Do not forget to give star 🌟
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+### Premimun Version ( without watermark)
+
+Coming soon
+
 Get STRING_NAME from here only otherwise not work:
 
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@Kartikpro/KINGBOT-MUSIC-STRING#main.py)
