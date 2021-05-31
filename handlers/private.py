@@ -7,11 +7,13 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_sticker("CAACAgQAAx0CTv65QgABBfJlYF6VCrGMm6OJ23AxHmD6qUSWESsAAhoQAAKm8XEeD5nrjz5IJFYeBA")
+    await message.reply_sticker("CAACAgEAAx0CTEdZWQACC4VgtPsYrWBGcfDUYZ-2vJRG9dem-AACyQEAAh8UIERsZH-rbrIloh8E")
     await message.reply_text(
         f"""**Dear {message.from_user.first_name}!
 
 😁 I am KINGBOT Music Player. 
+
+😅Currently you are using KINGBOT MUSIC PREMIUM VERSION! 😳
 
 🥳 I can play music in your Telegram Group's Voice Chat😉
 
@@ -31,14 +33,14 @@ Regrards [KINGBOT](https://t.me/KINGBOTOFFICIAL)
                         "🛠 DEPLOY LINK🛠", url="https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fkartikrajofficial%2FMusicBot&template=https%3A%2F%2Fgithub.com%2Fkartikrajofficial%2FMusicBot")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/KINGBOTOFFICIALCHAT"
+                        "💬 Support Group", url="https://t.me/KINGBOTOFFICIALCHAT"
                     ),
                     InlineKeyboardButton(
                         "🔊 Channel", url="https://t.me/KINGBOTOFFICIAL"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/Kingbot_Music_Bot?startgroup=true"
+                        "➕ Add To Your Group ➕", url="https://t.me/{}?startgroup=true"
                     )]
             ]
         ),
