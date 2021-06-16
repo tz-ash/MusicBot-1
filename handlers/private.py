@@ -7,7 +7,7 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_sticker("CAACAgQAAx0CTv65QgABBfJlYF6VCrGMm6OJ23AxHmD6qUSWESsAAhoQAAKm8XEeD5nrjz5IJFYeBA")
+    await message.reply_sticker("CAACAgQAAx0CUJU0dgACAppgyWsRKZJ0W4hbRKdVMYuxwb50wwACgxcAAtqjlSw9sWir1m6CTx8E")
     await message.reply_text(
         f"""**Dear {message.from_user.first_name}!
 
@@ -15,7 +15,12 @@ async def start(_, message: Message):
 
 🥳 I can play music in your Telegram Group's Voice Chat😉
 
-Developed by ⚡ @Kartikrajofficial ⚡
+
+⚜️You can make your own music bot just tap on deploy link 🔱
+
+
+Developed by ⚡ @kartikrajofficial_s ⚡
+
 
 My commands - type  /help to get commands, which work in grp
 
