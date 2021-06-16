@@ -11,7 +11,7 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""**Dear {message.from_user.first_name}!
 
-😁 I am KINGBOT Music Player. 
+😁 I am INAYABOT Music Player. 
 
 🥳 I can play music in your Telegram Group's Voice Chat😉
 
@@ -19,31 +19,31 @@ async def start(_, message: Message):
 ⚜️You can make your own music bot just tap on deploy link 🔱
 
 
-Developed by ⚡ @kartikrajofficial_s ⚡
+Developed by ⚡ @tzkid ⚡
 
 
 My commands - type  /help to get commands, which work in grp
 
 Thanks for using .
 
-Regrards [KINGBOT](https://t.me/KINGBOTOFFICIAL)
+Regrards [INAYABOT](https://t.me/Inayamusic_bot)
 **
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 DEPLOY LINK🛠", url="https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fkartikrajofficial%2FMusicBot&template=https%3A%2F%2Fgithub.com%2Fkartikrajofficial%2FMusicBot")
+                        "🍁 DEPLOY LINK 🍁", url="https://t.me/tzkid")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/KINGBOTOFFICIALCHAT"
+                        "🍄 Group", url="https://t.me/tzkid"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/KINGBOTOFFICIAL"
+                        "👽 Channel", url="https://t.me/kidbots"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/Kingbot_Music_Bot?startgroup=true"
+                        "🦋 Add To Your Group 🦋", url="https://t.me/Inayamusic_bot?startgroup=true"
                     )]
             ]
         ),
@@ -52,12 +52,12 @@ Regrards [KINGBOT](https://t.me/KINGBOTOFFICIAL)
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**⭐KINGBOT MUSIC PLAYER IS ALWAYS ACTIVE!!⭐**""",
+      await message.reply_text("""**⭐INAYABOT MUSIC PLAYER IS ALWAYS ACTIVE!!⭐**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/KINGBOTOFFICIAL")
+                        "👽 Channel", url="https://t.me/kidbots")
                 ]
             ]
         )
